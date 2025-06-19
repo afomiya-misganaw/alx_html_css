@@ -1,1 +1,150 @@
+/* ===== Variables ===== */
+:root {
+  --primary-color: #FF6565;
+  --text-color: #1D1D1D;
+  --light-text: #FFFFFF;
+  --bg-dark: #071629;
+  --max-width: 1000px;
+  --transition: all 0.3s ease;
+}
 
+/* ===== Base Styles ===== */
+.header {
+  background: var(--bg-dark) url('images/hero-bg.jpg') no-repeat center/cover;
+  color: var(--light-text);
+  padding: 2rem 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== Navigation ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--light-text);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  transition: var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: var(--primary-color);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.mobile-menu-btn span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: var(--light-text);
+  margin: 5px 0;
+  transition: var(--transition);
+}
+
+/* ===== Hero Content ===== */
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+
+.cta-button {
+  background: var(--primary-color);
+  color: var(--light-text);
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.cta-button:hover,
+.cta-button:active {
+  opacity: 0.9;
+}
+
+/* ===== Mobile Styles ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 2rem 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+}
