@@ -1,4 +1,4 @@
-/* ===== Variables ===== */
+
 :root {
   --primary-color: #FF6565;
   --text-color: #1D1D1D;
@@ -8,7 +8,6 @@
   --transition: all 0.3s ease;
 }
 
-/* ===== Base Styles ===== */
 .header {
   background: var(--bg-dark) url('images/hero-bg.jpg') no-repeat center/cover;
   color: var(--light-text);
@@ -25,7 +24,6 @@
   padding: 0 1.5rem;
 }
 
-/* ===== Navigation ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -75,7 +73,7 @@
   transition: var(--transition);
 }
 
-/* ===== Hero Content ===== */
+
 .hero-content {
   flex: 1;
   display: flex;
@@ -119,7 +117,6 @@
   opacity: 0.9;
 }
 
-/* ===== Mobile Styles ===== */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
