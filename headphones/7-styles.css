@@ -1,1 +1,107 @@
 
+/* Copy all previous styles first */
+
+/* What We Do Section - Animations */
+.services-grid {
+    perspective: 1000px;
+}
+
+.service-item {
+    transition: all 0.4s ease-out;
+    transform-style: preserve-3d;
+}
+
+.service-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover .icon {
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Our Results Section - Animations */
+.pentagon {
+    animation: float 4s ease-in-out infinite;
+}
+
+.pentagon:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.pentagon:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.pentagon:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.pentagon:hover {
+    animation: pulse 0.5s ease, float 4s ease-in-out infinite;
+    filter: drop-shadow(0 0 15px rgba(255, 101, 101, 0.8));
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Rotating animation for icons in What We Do */
+.icon {
+    transition: transform 0.5s ease;
+}
+
+.service-item:hover .icon {
+    transform: rotateY(180deg);
+}
+
+/* Fade-in animation for all items */
+.service-item, .result-item {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+}
+
+.service-item:nth-child(1), .result-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.service-item:nth-child(2), .result-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.service-item:nth-child(3), .result-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.service-item:nth-child(4), .result-item:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .service-item:hover {
+        transform: translateY(-5px) scale(1.02);
+    }
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+    }
+}
