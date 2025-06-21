@@ -1,35 +1,19 @@
 # Headphones Company Website
 
-A responsive website for a headphone company with desktop and mobile layouts.
+## Figma Design
+- [View Figma design]() (Duplicate to your Drafts to edit)
 
-## Features
+## Requirements
+- **Responsive breakpoint**: 480px (mobile ≤ 480px)
+- **Max content width**: 1000px (centered)
+- **Link states**: `#FF5555` on hover/active
+- **Button states**: `opacity: 0.9` on hover/active
 
-- Fully responsive design (breaks at 480px)
-- Interactive elements with hover/active states
-- Clean CSS reset foundation
-- Content max-width of 1000px centered on page
+## Fonts
+- Source Sans Pro
+- Spin Cycle OT (fallback: sans-serif)
 
-## Design Specifications
-
-### Colors
-- Primary: Brand colors from Figma
-- Link states: `#FF6565` (hover/active)
-- Button hover/active: `opacity: 0.9`
-
-### Typography
-- Source Sans Pro (Body text)
-- Spin Cycle OT (Headings)
-- Fallback to system sans-serif fonts
-
-### Layout
-- Max content width: 1000px (centered)
-- Mobile breakpoint: 480px and below
-
-## Implementation Notes
-
-1. **CSS Reset** included to ensure consistent baseline
-2. **Responsive Breakpoint**:
-   ```css
-   @media (max-width: 480px) {
-     /* Mobile-specific styles */
-   }
+## Notes
+- CSS reset required
+- Round float values as needed
+- Use variable icons
