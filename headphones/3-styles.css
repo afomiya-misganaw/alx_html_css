@@ -309,3 +309,97 @@
         grid-template-columns: 1fr;
     }
 }
+
+.contact-us {
+    padding: 5rem 0;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: var(--background-dark);
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 3rem auto 0;
+    text-align: left;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+.form-group label {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    color: #999;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.form-group .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+/* Form field focus effects */
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
+    top: -1rem;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+.form-group input:focus ~ .underline,
+.form-group input:valid ~ .underline {
+    width: 100%;
+}
+
+/* Button styles (reusing from hero section) */
+.contact-form .cta-button {
+    display: block;
+    margin: 3rem auto 0;
+    border: none;
+}
+
+/* Simple animation for form submission */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+}
+
+.form-error {
+    animation: shake 0.5s;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 3rem 0;
+    }
+    
+    .contact-form {
+        padding: 0 1rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+}
