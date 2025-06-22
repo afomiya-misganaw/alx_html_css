@@ -146,7 +146,6 @@
   }
 }
 
-/* What We Do Section */
 .what-we-do {
     padding: 5rem 0;
     text-align: center;
@@ -196,7 +195,6 @@
     opacity: 0.8;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
     .services-grid {
         grid-template-columns: 1fr;
@@ -282,7 +280,6 @@
     opacity: 0.8;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
     .results-grid {
         grid-template-columns: 1fr 1fr;
@@ -358,7 +355,6 @@
     transition: all 0.3s;
 }
 
-/* Form field focus effects */
 .form-group input:focus ~ label,
 .form-group input:valid ~ label {
     top: -1rem;
@@ -371,14 +367,12 @@
     width: 100%;
 }
 
-/* Button styles (reusing from hero section) */
 .contact-form .cta-button {
     display: block;
     margin: 3rem auto 0;
     border: none;
 }
 
-/* Simple animation for form submission */
 @keyframes shake {
     0%, 100% { transform: translateX(0); }
     20%, 60% { transform: translateX(-5px); }
@@ -389,7 +383,6 @@
     animation: shake 0.5s;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
     .contact-us {
         padding: 3rem 0;
@@ -403,9 +396,7 @@
         margin-bottom: 1.5rem;
     }
 }
-/* Copy all previous styles from 3-styles.css here */
 
-/* Footer Section */
 .footer {
     background-color: var(--background-dark);
     color: var(--text-color);
@@ -448,7 +439,6 @@
     opacity: 0.8;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
     .footer {
         padding: 2rem 0;
@@ -462,11 +452,8 @@
         font-size: 1.2rem;
     }
 }
-/* Copy all previous styles except the .pentagon related ones */
 
-/* Our Results Section - Pure CSS Pentagons */
 .our-results {
-    /* Keep existing background styles */
     padding: 5rem 0;
     text-align: center;
     background-color: var(--background-dark);
@@ -474,7 +461,6 @@
     position: relative;
 }
 
-/* Pentagon Styles */
 .pentagon {
     width: 150px;
     height: 150px;
@@ -506,14 +492,12 @@
     color: white;
 }
 
-/* Glow effect on hover */
 .pentagon:hover {
     filter: drop-shadow(0 0 10px rgba(255, 101, 101, 0.7));
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 768px) {
     .pentagon {
         width: 120px;
@@ -552,7 +536,6 @@
     50% { transform: translateY(-10px); }
 }
 
-/* Our Results Section - Animations */
 .pentagon {
     animation: float 4s ease-in-out infinite;
 }
@@ -585,7 +568,6 @@
     100% { transform: scale(1); }
 }
 
-/* Rotating animation for icons in What We Do */
 .icon {
     transition: transform 0.5s ease;
 }
@@ -594,7 +576,6 @@
     transform: rotateY(180deg);
 }
 
-/* Fade-in animation for all items */
 .service-item, .result-item {
     opacity: 0;
     animation: fadeIn 0.8s forwards;
@@ -621,7 +602,6 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Mobile adjustments */
 @media (max-width: 768px) {
     .service-item:hover {
         transform: translateY(-5px) scale(1.02);
