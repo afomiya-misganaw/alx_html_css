@@ -146,7 +146,6 @@
   }
 }
 
-/* What We Do Section */
 .what-we-do {
     padding: 5rem 0;
     text-align: center;
@@ -196,7 +195,6 @@
     opacity: 0.8;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
     .services-grid {
         grid-template-columns: 1fr;
@@ -282,7 +280,6 @@
     opacity: 0.8;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
     .results-grid {
         grid-template-columns: 1fr 1fr;
