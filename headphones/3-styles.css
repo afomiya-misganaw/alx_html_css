@@ -146,7 +146,6 @@
   }
 }
 
-/* What We Do Section */
 .what-we-do {
     padding: 5rem 0;
     text-align: center;
@@ -282,7 +281,6 @@
     opacity: 0.8;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
     .results-grid {
         grid-template-columns: 1fr 1fr;
@@ -358,7 +356,6 @@
     transition: all 0.3s;
 }
 
-/* Form field focus effects */
 .form-group input:focus ~ label,
 .form-group input:valid ~ label {
     top: -1rem;
@@ -371,14 +368,12 @@
     width: 100%;
 }
 
-/* Button styles (reusing from hero section) */
 .contact-form .cta-button {
     display: block;
     margin: 3rem auto 0;
     border: none;
 }
 
-/* Simple animation for form submission */
 @keyframes shake {
     0%, 100% { transform: translateX(0); }
     20%, 60% { transform: translateX(-5px); }
@@ -389,7 +384,6 @@
     animation: shake 0.5s;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
     .contact-us {
         padding: 3rem 0;
